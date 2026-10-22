@@ -1,0 +1,41 @@
+{
+  "model_name": "StandardScaler + IsolationForest",
+  "model_version": "iforest-v1.0",
+  "sklearn_version": "1.9.1",
+  "features": [
+    "temperature_c",
+    "vibration_mm_s_rms",
+    "current_a",
+    "rpm"
+  ],
+  "n_samples": 9000,
+  "contamination": 0.03,
+  "random_state": 42,
+  "disclaimer": "Unsupervised anomaly detection identifies observations that deviate from normal multivariate operational distribution. It does not output a calibrated probability of failure or remaining useful life (RUL).",
+  "normal_stats": {
+    "temperature_c": {
+      "mean": 52.48413111111112,
+      "std": 3.4444138671216122,
+      "min": 43.44,
+      "max": 61.31
+    },
+    "vibration_mm_s_rms": {
+      "mean": 2.0900393333333334,
+      "std": 0.3379647516547252,
+      "min": 0.917,
+      "max": 3.233
+    },
+    "current_a": {
+      "mean": 9.322176666666666,
+      "std": 1.628515033202995,
+      "min": 5.82,
+      "max": 12.86
+    },
+    "rpm": {
+      "mean": 1558.0698777777777,
+      "std": 137.53836231917867,
+      "min": 1385.2,
+      "max": 1805.9
+    }
+  }
+}
